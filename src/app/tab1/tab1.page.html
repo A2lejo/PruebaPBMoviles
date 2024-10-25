@@ -1,40 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Calculadora</ion-title>
+    <ion-title>Foto y Github</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid>
-    <ion-row justify-content-center>
-      <ion-col size="12">
-        <ion-input [(ngModel)]="actual" readonly></ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row justify-content-center>
-      <ion-col size="2" *ngFor="let button of buttons.slice(0, 4)">
-        <ion-button expand="full" (click)="buttonClicked(button)">{{ button }}</ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row justify-content-center>
-      <ion-col size="2" *ngFor="let button of buttons.slice(4, 8)">
-        <ion-button expand="full" (click)="buttonClicked(button)">{{ button }}</ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row justify-content-center>
-      <ion-col size="2" *ngFor="let button of buttons.slice(8, 12)">
-        <ion-button expand="full" (click)="buttonClicked(button)">{{ button }}</ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row justify-content-center>
-      <ion-col size="2" *ngFor="let button of buttons.slice(12, 16)">
-        <ion-button expand="full" (click)="buttonClicked(button)">{{ button }}</ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row justify-content-center>
-      <ion-col size="2" *ngFor="let button of buttons.slice(16, 17)">
-        <ion-button expand="full" (click)="buttonClicked(button)">{{ button }}</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <!-- <form id="new-form">
+    <ion-item id="new-input2" style="height: 260px;">
+      <ion-label stacked>
+        Fecha inicial
+      </ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="" name="fechaini" [(ngModel)]="fechaini"></ion-datetime>
+    </ion-item>
+    <ion-item id="new-input3" style="height: 260px;">
+      <ion-label stacked>
+        Fecha final
+      </ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="" name="fechafin" [(ngModel)]="fechafin"></ion-datetime>
+    </ion-item>                
+  </form>
+  <ion-button expand="block" color="dark" (click)="calcular()">
+    Calcular
+  </ion-button>
+  <ion-item *ngIf="dias !== null">
+    <ion-label>
+      La difercia de dias es: {{ dias }}
+    </ion-label>
+  </ion-item> -->
 </ion-content>

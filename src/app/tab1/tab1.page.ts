@@ -2,34 +2,27 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-tab1',
-  templateUrl: './tab1.page.html',
-  styleUrls: ['./tab1.page.scss'],
+  templateUrl: 'tab1.page.html',
+  styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  actual: string = '';
-  buttons: string[] = [
-    '7', '8', '9', '/',
-    '4', '5', '6', '*',
-    '1', '2', '3', '-',
-    '0', '.', '=', '+',
-    'C'
-  ];
+  // fechaini: string;
+  // fechafin: string;
+  // dias: number | null = null;
 
-  buttonClicked(button: string) {
-    if (button === '=') {
-      this.calculate();
-    } else if (button === 'C') {
-      this.actual = '';
-    }else {
-      this.actual += button;
-    }
-  }
+  // constructor() {
+  //   this.fechaini = new Date().toISOString();
+  //   this.fechafin = new Date().toISOString();
+  // }
 
-  calculate() {
-    try {
-      this.actual = eval(this.actual);
-    } catch (e) {
-      this.actual = 'Error';
-    }
-  }
+  // calcular() {
+  //   if (this.fechaini && this.fechafin) {
+  //     const fechaInicio = new Date(this.fechaini);
+  //     const fechaFin = new Date(this.fechafin);
+  //     const diferencia = fechaFin.getTime() - fechaInicio.getTime();
+  //     this.dias = Math.ceil(diferencia / (1000 * 3600 * 24));
+  //   } else {
+  //     this.dias = null;
+  //   }
+  // }
 }

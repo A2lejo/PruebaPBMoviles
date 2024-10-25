@@ -22,14 +22,14 @@ export class Tab4Page {
     if (discriminant > 0) {
       const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
       const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-      this.roots = `Raíces reales y diferentes: ${root1} y ${root2}`;
+      this.roots = `Raíces: ${root1} y ${root2}`;
     } else if (discriminant === 0) {
       const root = -b / (2 * a);
-      this.roots = `Raíz real y única: ${root}`;
+      this.roots = `Raíz única: ${root}`;
     } else {
       const realPart = -b / (2 * a);
       const imaginaryPart = Math.sqrt(-discriminant) / (2 * a);
-      this.roots = `Raíces complejas: ${realPart} + ${imaginaryPart}i y ${realPart} - ${imaginaryPart}i`;
+      this.roots = `Raíces: ${realPart} + ${imaginaryPart}i y ${realPart} - ${imaginaryPart}i`;
     }
   }
 }
