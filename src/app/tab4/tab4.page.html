@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Raíces de funciones cuadráticas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="calculateRoots()">
+    <ion-item>
+      <ion-label position="floating">Coeficiente a</ion-label>
+      <ion-input type="number" [(ngModel)]="a" name="a" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Coeficiente b</ion-label>
+      <ion-input type="number" [(ngModel)]="b" name="b" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Coeficiente c</ion-label>
+      <ion-input type="number" [(ngModel)]="c" name="c" required></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit">Calcular Raíces</ion-button>
+  </form>
+
+  <div *ngIf="roots">
+    <h2>Raíces:</h2>
+    <p>{{ roots }}</p>
+  </div>
+</ion-content>
