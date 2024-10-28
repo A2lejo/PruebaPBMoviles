@@ -4,27 +4,23 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-  <!-- <form id="new-form">
-    <ion-item id="new-input2" style="height: 260px;">
-      <ion-label stacked>
-        Fecha inicial
-      </ion-label>
-      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="" name="fechaini" [(ngModel)]="fechaini"></ion-datetime>
-    </ion-item>
-    <ion-item id="new-input3" style="height: 260px;">
-      <ion-label stacked>
-        Fecha final
-      </ion-label>
-      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="" name="fechafin" [(ngModel)]="fechafin"></ion-datetime>
-    </ion-item>                
-  </form>
-  <ion-button expand="block" color="dark" (click)="calcular()">
-    Calcular
-  </ion-button>
-  <ion-item *ngIf="dias !== null">
-    <ion-label>
-      La difercia de dias es: {{ dias }}
-    </ion-label>
-  </ion-item> -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="text-align: center;">Repositorio de GitHub</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div style="text-align: center;">
+        <img src="assets/FotoCurriculum.jpg" alt="Foto Alejandro Campoverde" style=" width: 150px; height: 150px;">
+      </div>
+      <p style="text-align: center;">
+        <a href="https://github.com/A2lejo/PruebaPBMoviles.git" target="_blank"
+          style="display: inline-flex; align-items: center; text-decoration: none;">
+          <ion-icon aria-hidden="true" name="logo-github" style="height: 25px; width: 25px; padding: 10px;"></ion-icon>
+          <span>Repositorio en GitHub</span>
+        </a>
+      </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
