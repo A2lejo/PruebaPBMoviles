@@ -1,38 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
 
 @Component({
   selector: 'app-tab5',
   templateUrl: 'tab5.page.html',
   styleUrls: ['tab5.page.scss']
 })
-export class Tab5Page {
+export class Tab5Page implements OnInit {
   text: string = '';
 
-  constructor() {}
+  constructor(private storage: Storage) {}
+
+  async ngOnInit() {
+    await this.storage.create();
+  }
 
   async saveText(event: Event) {
     event.preventDefault();
-
-    const options = {
-      types: [
-        {
-          description: 'Text Files',
-          accept: {
-            'text/plain': ['.txt'],
-          },
-        },
-      ],
-    };
-
     try {
-      const handle = await (window as any).showSaveFilePicker(options);
-      const writable = await handle.createWritable();
-      await writable.write(this.text);
-      await writable.close();
+      await this.storage.set('savedText', this.text);
       alert('Texto guardado exitosamente!');
     } catch (error) {
-      console.error('Error al guardar el archivo:', error);
-      alert('Error al guardar el archivo.');
+      console.error('Error al guardar el texto:', error);
+      alert('Error al guardar el texto.');
     }
   }
 }
