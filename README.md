@@ -6,7 +6,7 @@
 ## Icono perzonalizado
 ![Imagen de WhatsApp 2024-11-01 a las 17 05 36_c97d3dac](https://github.com/user-attachments/assets/66669807-6b74-469d-a52b-be7f8613667f)
 
-# Pantallas de la aplicación
+<h1 align="center">Pantallas de la aplicación</h1>
 
 ## Primera pantalla
 ![image](https://github.com/user-attachments/assets/0570dfa3-665c-4d39-88c4-fb604e64025d)
