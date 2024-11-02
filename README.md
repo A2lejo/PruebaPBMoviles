@@ -1,4 +1,4 @@
-# App mejorada
+# **App mejorada**
 
 ## Splash Screen
 ![Imagen de WhatsApp 2024-11-01 a las 17 05 27_ca8a4d46](https://github.com/user-attachments/assets/8721dba2-1008-4d99-a827-a9892312d7dc)
